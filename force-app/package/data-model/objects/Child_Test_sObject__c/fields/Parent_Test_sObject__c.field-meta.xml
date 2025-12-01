@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Test_sObject__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Master Detail relationship to the parent</description>
+    <inlineHelpText>Master Detail relationship to the parent</inlineHelpText>
+    <label>Parent Test sObject</label>
+    <referenceTo>Parent_Test_sObject__c</referenceTo>
+    <relationshipLabel>Child Test sObjects</relationshipLabel>
+    <relationshipName>Child_Test_sObjects</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

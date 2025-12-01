@@ -1,24 +1,19 @@
 # Lightweight - Apex Unit Test Util v2
-## Description
 A lightweight Apex Unit Test Utility library for User creation, Exception Testing, HTTP Callout and Callable Mocking
 
-## Blog details
-**Advanced Exception Testing**
-https://medium.com/@justusvandenberg/advanced-exception-handling-in-salesforce-apex-unit-tests-958bef9c34a9
+## Blog(s)
+- [Advanced Exception Testing in Salesforce Apex Unit Tests](https://medium.com/@justusvandenberg/advanced-exception-handling-in-salesforce-apex-unit-tests-958bef9c34a9)
+- [Testing Apex Callable Interface Dependencies In Salesforce Unit Tests](https://medium.com/@justusvandenberg/testing-apex-callable-interface-dependencies-in-salesforce-unit-tests-db039342db22)
 
-**Callable Interface Testing**
-https://medium.com/@justusvandenberg/testing-apex-callable-interface-dependencies-in-salesforce-unit-tests-db039342db22
+## Package Info
+|   |   |   |   |
+|---|---|---|---|
+|Package Name|**[Lightweight - Apex Unit Test Util v2](https://github.com/jfwberg/lightweight-apex-unit-test-util-v2)**||
+|Package Version|2.7.0-1||
+|Last updated date|Nov 5, 2024||
+|Managed Package | <ul><li> `sf package install --wait 30 --security-type AllUsers --package 04tP3000001adwjIAA`</li><li>`/packaging/installPackage.apexp?p0=04tP3000001adwjIAA`</li></ul> | [Install in Production](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tP3000001adwjIAA) | [Install in Sandbox](https://test.salesforce.com/packaging/installPackage.apexp?mgd=true&p0=04tP3000001adwjIAA)|
+|Unlocked Package| <ul><li> `sf package install --wait 30 --security-type AllUsers --package 04tP3000001adv7IAA`</li><li>`/packaging/installPackage.apexp?p0=04tP3000001adv7IAA`</li></ul> | [Install in Production](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tP3000001adv7IAA) | [Install in Sandbox](https://test.salesforce.com/packaging/installPackage.apexp?p0=04tP3000001adv7IAA)         |
 
-**Testing Callouts**
-Coming soon...
-
-## Package info
-| Info | Value |
-|---|---|
-|Name|Lightweight - Apex Unit Test Util v2|
-|Version|2.5.0-1|
-|Managed Installation URL | */packaging/installPackage.apexp?p0=04tP3000000rUmLIAU*
-|Unlocked Installation URL| */packaging/installPackage.apexp?p0=04tP3000000rUpZIAU*
 
 # Demo
 For detailed examples see the *force-app/demo* folder. Note that the demo files are OOTB only working with the packaged versions. To use the custom versions remove the namespace and update the class names accordingly.

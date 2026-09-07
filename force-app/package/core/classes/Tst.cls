@@ -327,7 +327,7 @@ global with sharing class Tst {
 
 
     /** **************************************************************************************************** **
-     **                                     GLOBAL USER UTILIY METHODS                                       **
+     **                                     GLOBAL USER UTILITY METHODS                                       **
      ** **************************************************************************************************** **/
      /**
      * @description Method to create a run as user without any permission sets
@@ -376,7 +376,7 @@ global with sharing class Tst {
 
 
     /**
-     * @description Method to create a run as user with  permission sets and field overrides
+     * @description Method to create a run as user with permission sets and field overrides
      * @param       profileName        The (api) name of the Profile
      * @param       permissionSetNames The (api) names of the Permission Sets
      * @param       fieldOverrides     A map that contains custom field values for the user

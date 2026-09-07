@@ -184,7 +184,7 @@ public with sharing class ApexUnitTestUtil {
     @TestVisible
     private static void assertExceptionHasBeenThrow(){
         // Throw a safety message unless overwritted
-        Assert.areEqual(true, safetyOverride, SAFETY_MESSAGE);
+        Assert.isTrue(safetyOverride, SAFETY_MESSAGE);
     }
 
 

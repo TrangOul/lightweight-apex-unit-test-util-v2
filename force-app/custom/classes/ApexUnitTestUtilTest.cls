@@ -70,13 +70,13 @@ private with sharing class ApexUnitTestUtilTest {
             ApexUnitTestUtil.addForcedCondition('APEX_UNIT_TEST');
 
             // Validate the condition exists and returns true
-            Assert.areEqual(true, ApexUnitTestUtil.forceCondition('APEX_UNIT_TEST'), 'Expected condition to be true');
+            Assert.isTrue(ApexUnitTestUtil.forceCondition('APEX_UNIT_TEST'), 'Expected condition to be true');
 
             // Remove the identifier
             ApexUnitTestUtil.removeForcedCondition('APEX_UNIT_TEST');
 
             // Validate the exception exists
-            Assert.areEqual(false, ApexUnitTestUtil.forceCondition('APEX_UNIT_TEST'), 'Expected condition to be false');
+            Assert.isFalse(ApexUnitTestUtil.forceCondition('APEX_UNIT_TEST'), 'Expected condition to be false');
         }
         Test.stopTest();
     }
@@ -149,7 +149,7 @@ private with sharing class ApexUnitTestUtilTest {
             // Check that the custom values on the user record are updated correctly
             Assert.areEqual('Henk',     testUser.FirstName,         'Expected FirstName to be Henk');
             Assert.areEqual('de Vries', testUser.LastName,          'Expected last name to be de Vries');
-            Assert.areEqual(true,       testUser.ReceivesInfoEmails,'Expected ReceivesInfoEmails to be true');
+            Assert.isTrue(              testUser.ReceivesInfoEmails,'Expected ReceivesInfoEmails to be true');
         }
         Test.stopTest();
     }
@@ -177,7 +177,7 @@ private with sharing class ApexUnitTestUtilTest {
             // Check that the custom values on the user record are updated correctly
             Assert.areEqual('Henk',     testUser.FirstName,         'Expected FirstName to be Henk');
             Assert.areEqual('de Vries', testUser.LastName,          'Expected last name to be de Vries');
-            Assert.areEqual(true,       testUser.ReceivesInfoEmails,'Expected ReceivesInfoEmails to be true');
+            Assert.isTrue(              testUser.ReceivesInfoEmails,'Expected ReceivesInfoEmails to be true');
         }
         Test.stopTest();
     }

@@ -70,13 +70,13 @@ private with sharing class TstTest {
             Tst.addForcedCondition('APEX_UNIT_TEST');
 
             // Validate the condition exists and returns true
-            Assert.areEqual(true, Tst.forceCondition('APEX_UNIT_TEST'), 'Expected condition to be true');
+            Assert.isTrue(Tst.forceCondition('APEX_UNIT_TEST'), 'Expected condition to be true');
 
             // Remove the identifier
             Tst.removeForcedCondition('APEX_UNIT_TEST');
 
             // Validate the exception exists
-            Assert.areEqual(false, Tst.forceCondition('APEX_UNIT_TEST'), 'Expected condition to be false');
+            Assert.isFalse(Tst.forceCondition('APEX_UNIT_TEST'), 'Expected condition to be false');
         }
         Test.stopTest();
     }
@@ -149,7 +149,7 @@ private with sharing class TstTest {
             // Check that the custom values on the user record are updated correctly
             Assert.areEqual('Henk',     testUser.FirstName,         'Expected FirstName to be Henk');
             Assert.areEqual('de Vries', testUser.LastName,          'Expected last name to be de Vries');
-            Assert.areEqual(true,       testUser.ReceivesInfoEmails,'Expected ReceivesInfoEmails to be true');
+            Assert.isTrue(              testUser.ReceivesInfoEmails,'Expected ReceivesInfoEmails to be true');
         }
         Test.stopTest();
     }
@@ -176,7 +176,7 @@ private with sharing class TstTest {
             // Check that the custom values on the user record are updated correctly
             Assert.areEqual('Henk',     testUser.FirstName,         'Expected FirstName to be Henk');
             Assert.areEqual('de Vries', testUser.LastName,          'Expected last name to be de Vries');
-            Assert.areEqual(true,       testUser.ReceivesInfoEmails,'Expected ReceivesInfoEmails to be true');
+            Assert.isTrue(              testUser.ReceivesInfoEmails,'Expected ReceivesInfoEmails to be true');
         }
         Test.stopTest();
     }

@@ -170,7 +170,7 @@ public with sharing class TstDemoTest {
 
         Test.startTest();
         System.runAs(testUser){
-            Assert.areEqual(true, true);
+            Assert.isTrue(true);
         }
         Test.stopTest();
         
@@ -192,7 +192,7 @@ public with sharing class TstDemoTest {
 
         Test.startTest();
         System.runAs(testUser){
-            Assert.areEqual(true, true);
+            Assert.isTrue(true);
         }
         Test.stopTest();
         
@@ -213,7 +213,7 @@ public with sharing class TstDemoTest {
 
         Test.startTest();
         System.runAs(testUser){
-            Assert.areEqual(true, true);
+            Assert.isTrue(true);
         }
         Test.stopTest();  
     }
@@ -239,7 +239,7 @@ public with sharing class TstDemoTest {
 
         Test.startTest();
         System.runAs(testUser){
-            Assert.areEqual(true, true);
+            Assert.isTrue(true);
         }
         Test.stopTest();
     }

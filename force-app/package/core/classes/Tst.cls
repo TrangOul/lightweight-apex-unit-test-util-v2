@@ -203,7 +203,7 @@ global with sharing class Tst {
         checkTestStatus();
 
         // Throw a safety message
-        Assert.areEqual(true, safetyOverride, SAFETY_MESSAGE);
+        Assert.isTrue(safetyOverride, SAFETY_MESSAGE);
     }
 
 

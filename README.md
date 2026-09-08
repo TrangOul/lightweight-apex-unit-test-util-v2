@@ -130,10 +130,10 @@ User runAsUser = Tst.createRunAsUser(
 );
 
 
-// Method and overload methods to create a new User with a profile and multiple permission sets
+// Permission Sets and Permission Set Groups can be mixed - they share the API name pool
 User runAsUser = Tst.createRunAsUser(
     PROFILE_NAME,
-    new String[]{PERMISSION_SET_ONE, PERMISSION_SET_TWO}
+    new String[]{PERMISSION_SET_ONE, PERMISSION_SET_TWO, PERMISSION_SET_GROUP_ONE, PERMISSION_SET_GROUP_TWO}
 );
 
 // Method and overload methods to create a new User with a profile and multiple permission sets

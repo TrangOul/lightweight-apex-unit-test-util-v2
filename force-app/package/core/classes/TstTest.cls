@@ -44,7 +44,7 @@ private with sharing class TstTest {
 
             }catch(Tst.ForcedException e){
 
-                // Test the standard forced exception message has been trhown
+                // Test the standard forced exception message has been thrown
                 Tst.assertForcedExceptionMessage(e);
             }
 

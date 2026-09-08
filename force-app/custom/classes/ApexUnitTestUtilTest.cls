@@ -44,7 +44,7 @@ private with sharing class ApexUnitTestUtilTest {
 
             }catch(ApexUnitTestUtil.ForcedException e){
 
-                // Test the standard forced exception message has been trhown
+                // Test the standard forced exception message has been thrown
                 ApexUnitTestUtil.assertForcedExceptionMessage(e);
             }
 

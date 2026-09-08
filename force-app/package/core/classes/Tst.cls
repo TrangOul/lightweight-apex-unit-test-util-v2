@@ -568,7 +568,7 @@ global with sharing class Tst {
         }
 
         // Assign PS for still-pending names only.
-        for (PermissionSet ps : [SELECT Id, Name FROM PermissionSet WHERE Name IN :pendingPermissionSetNames WITH SYSTEM_MODE]){
+        for (PermissionSet ps : [SELECT Id, Name FROM PermissionSet WHERE Name IN :pendingPermissionSetNames AND IsOwnedByProfile = FALSE WITH SYSTEM_MODE]){
             pendingPermissionSetNames.remove(ps.Name);
             permissionSetAssignments.add(
                 new PermissionSetAssignment(

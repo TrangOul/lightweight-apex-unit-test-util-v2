@@ -119,7 +119,7 @@ private with sharing class TstTest {
             // Check that no permission sets are assigned for the newly created user
             Assert.areEqual(
                 0,
-                [SELECT COUNT() FROM PermissionSetAssignment WHERE AssigneeId = :testUser.Id AND PermissionSet.IsOwnedByProfile = false],
+                [SELECT COUNT() FROM PermissionSetAssignment WHERE AssigneeId = :testUser.Id AND PermissionSet.IsOwnedByProfile = FALSE],
                 'Expected no permission sets to exists'
             );
         }
